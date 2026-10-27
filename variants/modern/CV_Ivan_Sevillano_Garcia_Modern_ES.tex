@@ -1,0 +1,174 @@
+\documentclass[10pt,a4paper]{article}
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES
+%----------------------------------------------------------------------------------------
+\usepackage[a4paper,left=76mm,right=11mm,top=13mm,bottom=12mm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{sourcesanspro}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+\usepackage{tikz}
+\usepackage{eso-pic}
+
+%----------------------------------------------------------------------------------------
+%	COLORS
+%----------------------------------------------------------------------------------------
+\definecolor{sidebar}{HTML}{132A4A}
+\definecolor{sidebarink}{HTML}{DCE5F0}
+\definecolor{sidebarhead}{HTML}{5FD3E8}
+\definecolor{ink}{HTML}{1F2937}
+\definecolor{muted}{HTML}{5B6B7F}
+\definecolor{accent}{HTML}{0E7490}
+\definecolor{linkblue}{HTML}{0B5FA5}
+
+\color{ink}
+\linespread{1.0}
+\setlength{\parskip}{0.15em}
+
+%----------------------------------------------------------------------------------------
+%	STYLES
+%----------------------------------------------------------------------------------------
+\titleformat{\section}{\normalsize\bfseries\color{accent}}{}{0em}{}[\vspace{-0.45em}\textcolor{accent!35}{\rule{\textwidth}{0.8pt}}]
+\titlespacing*{\section}{0pt}{0.85em}{0.35em}
+
+\newcommand{\job}[2]{\textbf{\color{ink}#1}\hfill{\footnotesize\color{muted}#2}}
+\newcommand{\where}[1]{{\footnotesize\color{muted}#1}}
+\newcommand{\sidehead}[1]{{\footnotesize\bfseries\color{sidebarhead}\MakeUppercase{#1}}\par\vspace{0.25em}}
+\newcommand{\sideitem}[2]{\makebox[4.2mm][l]{\color{sidebarhead}#1}{\footnotesize\color{sidebarink}#2}\par\vspace{0.32em}}
+\newcommand{\sidebarrule}{\vspace{0.45em}{\color{sidebarhead!45}\rule{\linewidth}{0.4pt}}\vspace{0.45em}\par}
+
+\setlist[itemize]{label=\textcolor{accent}{\scriptsize\textbullet}, leftmargin=*, noitemsep, topsep=2pt, parsep=0pt}
+
+\hypersetup{colorlinks=true, urlcolor=linkblue, linkcolor=linkblue}
+\pagestyle{empty}
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+%--- SIDEBAR BACKGROUND (every page) ---
+\AddToShipoutPictureBG{\AtPageLowerLeft{\color{sidebar}\rule{64mm}{\paperheight}}}
+
+\begin{tikzpicture}[remember picture,overlay]
+  \node[anchor=north west, inner sep=0pt, text width=50mm, align=left]
+    at ([xshift=7mm,yshift=-14mm]current page.north west) {%
+      {\color{white}\fontsize{21}{24}\selectfont\bfseries Iván\\[0.15em]Sevillano-García}\par
+      \vspace{0.5em}
+      {\footnotesize\color{sidebarink}Investigador postdoctoral}\par
+      {\footnotesize\color{sidebarink}IA Confiable $\cdot$ IA explicable}\par
+      \vspace{0.2em}
+      {\footnotesize\color{sidebarink}Instituto DaSCI\\Universidad de Granada, España}\par
+      \sidebarrule
+      \sidehead{Contacto}
+      \sideitem{\faEnvelope}{\href{mailto:isevillano@ugr.es}{isevillano@ugr.es}}
+      \sideitem{\faGlobe}{\href{https://www.linkedin.com/in/iván-sevillano-garcía-304801116}{LinkedIn}}
+      \sideitem{\faGithub}{\href{https://github.com/isega24}{github.com/isega24}}
+      \sideitem{\faGraduationCap}{\href{https://scholar.google.com/citations?user=g5xyauEAAAAJ}{Google Scholar}}
+      \sideitem{\faOrcid}{\href{https://orcid.org/0000-0002-5029-9106}{0000-0002-5029-9106}}
+      \sidebarrule
+      \sidehead{Métricas}
+      \sideitem{\faQuoteRight}{521 citas}
+      \sideitem{\faChartBar}{índice h 4}
+      \sideitem{\faCalendar}{512 citas desde 2021}
+      \sidebarrule
+      \sidehead{Competencias}
+      \sideitem{\faCode}{Python, R}
+      \sideitem{\faLayerGroup}{PyTorch, TensorFlow\\scikit-learn}
+      \sideitem{\faTerminal}{Git, Linux, Conda\\Slurm, TensorBoard}
+      \sideitem{\faMicrochip}{Clústeres multi-GPU\\NVIDIA A100}
+      \sidebarrule
+      \sidehead{Idiomas}
+      \sideitem{\faComments}{Español --- nativo}
+      \sideitem{\faComments}{Inglés --- fluido}
+    };
+\end{tikzpicture}
+
+%--- MAIN COLUMN ---
+\section*{Perfil}
+
+Investigador posdoctoral en IA Confiable --- IA explicable (XAI), detección de datos fuera de distribución, evaluación y auditoría de explicaciones, y mejora de modelos guiada por explicaciones. Doctor Cum Laude (UGR, 2025); publicaciones en \textit{Pattern Recognition}, \textit{Machine Intelligence Research}, \textit{Information Fusion} e \textit{IEEE JBHI}. Mis intereses actuales incluyen IA agéntica, ingeniería de \textit{harness} e ingeniería de bucles.
+
+\section*{Formación}
+
+\job{Doctorado en Tecnologías de la Información y la Comunicación}{2021--2025}\\
+\where{Universidad de Granada --- Instituto DaSCI}\\
+{\footnotesize\textit{Tesis:} Explainable AI: Methods for the Generation, Evaluation, and Correction of Explanations}\\
+{\footnotesize\color{muted}Directores: F.~Herrera, J.~Luengo $\cdot$ Defensa: 13 nov 2025 $\cdot$ \textbf{Sobresaliente Cum Laude}}
+
+\vspace{0.35em}
+\job{Máster en Ciencia de Datos e Ingeniería de Computadores}{2019--2020}\\
+\where{Universidad de Granada}
+
+\vspace{0.35em}
+\job{Doble Grado en Ingeniería Informática y Matemáticas}{2013--2019}\\
+\where{Universidad de Granada --- ETSIIT}
+
+\section*{Experiencia investigadora}
+
+\job{Investigador predoctoral}{2019--2025}\\
+\where{Universidad de Granada --- Instituto DaSCI}
+\begin{itemize}
+  \item \textbf{REVEL:} marco teórico para auditar explicaciones lineales locales en robustez, concisión y prescriptividad.
+  \item \textbf{X-SHIELD:} regularización guiada por explicaciones que oculta características durante el entrenamiento y mejora rendimiento y explicabilidad a la vez.
+  \item \textbf{STOOD-X:} detección OOD explicable en dos etapas, combinando el test de Wilcoxon-Mann-Whitney con explicaciones visuales por conceptos.
+  \item \textbf{COVIDGR:} codiseño del conjunto de radiografías COVID-19 equilibrado por gravedad y de la metodología COVID-SDNet.
+\end{itemize}
+
+\vspace{0.2em}
+\job{Investigador visitante}{feb--mar 2026}\\
+\where{Universidad Politécnica de Poznań, Polonia --- anfitrión: Prof.~J.~Stefanowski}
+\begin{itemize}
+  \item Explicaciones basadas en prototipos y contrafactuales para métodos XAI post-hoc.
+\end{itemize}
+
+\vspace{0.2em}
+\job{Colaboración industrial --- ArcelorMittal}{2020--2021}\\
+\where{vía DaSCI, UGR}
+\begin{itemize}
+  \item \textit{Ensemble} de aprendizaje profundo para segmentación de imágenes metalográficas; publicación del conjunto MetalDAM.
+\end{itemize}
+
+\section*{Publicaciones seleccionadas}
+
+{\footnotesize
+\textbf{STOOD-X: Explainable OOD Detection via Nonparametric Statistical Testing on Large-Scale Datasets.} \textit{Pattern Recognition}, 2026. \href{https://doi.org/10.1016/j.patcog.2026.113254}{DOI}\par\vspace{0.25em}
+\textbf{X-SHIELD: Regularization for Explainable Artificial Intelligence.} \textit{Machine Intelligence Research}, 23, 528--544, 2026. \href{https://doi.org/10.1007/s11633-025-1576-y}{DOI}\par\vspace{0.25em}
+\textbf{A Three-Level Framework for LLM-Enhanced eXplainable AI.} \textit{Information Systems Frontiers}, 2025. \href{https://doi.org/10.1007/s10796-025-10668-1}{DOI}\par\vspace{0.25em}
+\textbf{REVEL Framework to Measure Local Linear Explanations for Black-Box Models.} \textit{Intl.~J.~Intelligent Systems}, 2023. \href{https://doi.org/10.1155/2023/8068569}{DOI}\par\vspace{0.25em}
+\textbf{A Tutorial on Segmentation of Metallographic Images: MetalDAM Dataset, DL Ensemble.} \textit{Information Fusion}, 2022. \href{https://doi.org/10.1016/j.inffus.2021.09.018}{DOI}\par\vspace{0.25em}
+\textbf{COVIDGR Dataset \& COVID-SDNet Methodology for Predicting COVID-19 (Chest X-ray).} \textit{IEEE JBHI}, 24(12), 2020. \href{https://doi.org/10.1109/JBHI.2020.3037127}{DOI}\par\vspace{0.25em}
+\textbf{Fine-Grained Prostate Cancer Tissue Classification via Expert-Annotated Dataset \& Interpretable DL.} \textit{IEEE CAI 2026}. \href{https://doi.org/10.1109/CAI68641.2026.11536250}{DOI}
+\par}
+
+\section*{Software y datos}
+
+\begin{itemize}
+  \item \textbf{S-ReVel}, \textbf{S-STOOD-X}, \textbf{S-T-SHIELD} --- librerías XAI mantenidas en \href{https://github.com/ari-dasci}{github.com/ari-dasci}.
+  \item \textbf{COVIDGR} y \textbf{MetalDAM} --- conjuntos de datos de referencia abiertos.
+\end{itemize}
+
+\section*{Docencia y actividad académica}
+
+\begin{itemize}
+  \item Codirección de 2 tesis doctorales (UGR) y de trabajos de fin de grado y máster.
+  \item Docencia: Metodología de la Programación (Grado en Ingeniería Informática, UGR, 2024--2025).
+  \item Ponente en la Escuela Internacional de Verano ADIA Lab sobre IA Explicable --- ``Lab on xAI Tools'' (Granada, 2025).
+  \item Revisión por pares: \textit{Information Sciences} (2025), \textit{Information Fusion} (2023), IEEE SSCI 2025.
+  \item Proyectos: PID2023-150070NB-I00 (MCIN/AEI), Cátedra ENIA IAFER (EU NextGen), IAFER CiB (INCIBE).
+\end{itemize}
+
+\section*{Referencias}
+
+{\footnotesize
+\textbf{Prof.~Francisco Herrera} --- Catedrático, Dpto.~de CC.~de la Computación e IA, UGR $\cdot$ \href{mailto:herrera@decsai.ugr.es}{herrera@decsai.ugr.es}\par
+\textbf{Prof.~Julián Luengo} --- Catedrático, Dpto.~de CC.~de la Computación e IA, UGR $\cdot$ \href{mailto:julianlm@decsai.ugr.es}{julianlm@decsai.ugr.es}
+\par}
+
+\end{document}
