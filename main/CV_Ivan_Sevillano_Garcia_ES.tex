@@ -1,0 +1,229 @@
+\documentclass[10pt,a4paper]{article}
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES
+%----------------------------------------------------------------------------------------
+\usepackage[left=0.7in,top=0.7in,right=0.7in,bottom=0.7in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{sourcesanspro}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+
+%----------------------------------------------------------------------------------------
+%	COLORS & STYLES
+%----------------------------------------------------------------------------------------
+\definecolor{titleblue}{HTML}{00199e}
+\definecolor{subtitleblue}{HTML}{2ec1e0}
+\definecolor{darktext}{HTML}{222222}
+\definecolor{linkblue}{HTML}{0B5FA5}
+\definecolor{subtle}{HTML}{666666}
+
+\color{darktext}
+\setlength{\parskip}{0.1em}
+
+\titleformat{\section}{\normalsize\bfseries\color{titleblue}}{}{0em}{}[\vspace{-0.3em}\rule{\textwidth}{0.4pt}]
+\titlespacing*{\section}{0pt}{0.6em}{0.2em}
+
+\newcommand{\blueitem}[1]{\textcolor{subtitleblue}{\textbf{#1}}}
+\newcommand{\sub}[1]{\textcolor{subtle}{\footnotesize #1}}
+
+\setlist[itemize]{label=\textbullet, leftmargin=*, noitemsep, topsep=2pt, parsep=0pt}
+
+\hypersetup{colorlinks=true, urlcolor=linkblue, linkcolor=linkblue}
+%----------------------------------------------------------------------------------------
+%	DOCUMENT CONTENT
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+%--- HEADER ---
+{\Large \textbf{\textcolor{titleblue}{Iván Sevillano-García}}} \hfill {\footnotesize \textcolor{subtle}{521 citas \textbar\ índice h 4 \textbar\ 512 desde 2021}} \\[0.1em]
+{\footnotesize Instituto DaSCI, Universidad de Granada, España} \\[0.1em]
+{\footnotesize
+\faEnvelope\ \href{mailto:isevillano@ugr.es}{isevillano@ugr.es} \quad
+\faGlobe\ \href{https://www.linkedin.com/in/iván-sevillano-garcía-304801116}{LinkedIn} \quad
+\faGithub\ \href{https://github.com/isega24}{GitHub} \quad
+\faGraduationCap\ \href{https://scholar.google.com/citations?user=g5xyauEAAAAJ}{Google Scholar} \quad
+\faOrcid\ \href{https://orcid.org/0000-0002-5029-9106}{ORCID}
+}
+
+\vspace{0.3em}
+
+%--- PROFILE ---
+\section*{Perfil}
+
+Investigador posdoctoral en IA Confiable --- IA explicable (XAI), detección de datos fuera de distribución, evaluación y auditoría de explicaciones, y mejora de modelos guiada por explicaciones. Doctor Cum Laude (UGR, 2025); publicaciones en \textit{Pattern Recognition}, \textit{Machine Intelligence Research}, \textit{Information Fusion} e \textit{IEEE JBHI}. Mis intereses de investigación actuales incluyen IA agéntica, ingeniería de \textit{harness} e ingeniería de bucles (\textit{loop engineering}).
+
+%--- EDUCATION ---
+\section*{Formación}
+
+\blueitem{Doctorado en Tecnologías de la Información y la Comunicación \hfill 2021--2025} \\
+\sub{Universidad de Granada --- Instituto DaSCI} \\
+\textit{Tesis:} Explainable AI: Methods for the Generation, Evaluation, and Correction of Explanations \\
+\sub{Directores: F.~Herrera, J.~Luengo \quad Defensa: 13 nov 2025 \quad \textbf{Cum Laude}} \\
+\sub{Contribuciones: REVEL (evaluación de explicaciones), X-SHIELD (regularización de explicaciones), STOOD-X (detección OOD explicable).} \\
+\sub{\href{https://hdl.handle.net/10481/112935}{hdl.handle.net/10481/112935} \quad ISBN 9791370150433}
+
+\vspace{0.2em}
+
+\blueitem{Máster en Ciencia de Datos e Ingeniería de Computadores \hfill 2019--2020} \\
+\sub{Universidad de Granada}
+
+\vspace{0.2em}
+
+\blueitem{Grado en Matemáticas \hfill 2013--2019} \\
+\sub{Universidad de Granada --- ETSIIT}
+
+\vspace{0.2em}
+
+\blueitem{Grado en Ingeniería Informática \hfill 2013--2019} \\
+\sub{Universidad de Granada --- ETSIIT}
+
+%--- RESEARCH EXPERIENCE ---
+\section*{Experiencia investigadora}
+
+\blueitem{Investigador predoctoral \hfill 2019--2025} \\
+\sub{Universidad de Granada --- Instituto DaSCI}
+\begin{itemize}
+    \item \textbf{REVEL:} diseño de un marco teórico para auditar explicaciones lineales locales en robustez, concisión y prescriptividad; evaluado sobre \textit{benchmarks} de clasificación de imágenes con aprendizaje profundo.
+    \item \textbf{X-SHIELD:} propuesta de una familia de regularizadores guiados por explicaciones que seleccionan características de entrada que ocultar durante el entrenamiento, mejorando simultáneamente rendimiento y explicabilidad del modelo.
+    \item \textbf{STOOD-X:} desarrollo de un método de detección OOD explicable en dos etapas que combina el test no paramétrico de Wilcoxon-Mann-Whitney con explicaciones visuales basadas en conceptos.
+    \item \textbf{COVIDGR:} codiseño de un conjunto de radiografías de tórax COVID-19 equilibrado en todos los niveles de gravedad y de la metodología COVID-SDNet.
+\end{itemize}
+
+\blueitem{Investigador visitante \hfill feb--mar 2026} \\
+\sub{Universidad Politécnica de Poznań, Polonia --- anfitrión: Prof.~J.~Stefanowski}
+\begin{itemize}
+    \item Investigación sobre explicaciones basadas en prototipos y contrafactuales para métodos XAI post-hoc.
+\end{itemize}
+
+\blueitem{Colaboración industrial --- ArcelorMittal \hfill 2020--2021} \\
+\sub{vía DaSCI, UGR}
+\begin{itemize}
+    \item Codesarrollo de un \textit{ensemble} de aprendizaje profundo para la segmentación de imágenes metalográficas; publicación conjunta del conjunto de datos MetalDAM.
+\end{itemize}
+
+%--- PUBLICATIONS ---
+\section*{Publicaciones}
+
+\small
+
+\blueitem{Revistas}
+
+\textbf{STOOD-X: Explainable OOD Detection via Nonparametric Statistical Testing on Large-Scale Datasets.} \\
+\sub{\textit{Pattern Recognition}, 2026. \textbf{I.~Sevillano-García}, J.~Luengo, F.~Herrera. \href{https://doi.org/10.1016/j.patcog.2026.113254}{DOI} \quad (3 citas)}
+
+\textbf{X-SHIELD: Regularization for Explainable Artificial Intelligence.} \\
+\sub{\textit{Machine Intelligence Research}, 23, 528--544, 2026. \textbf{I.~Sevillano-García}, J.~Luengo, F.~Herrera. \href{https://doi.org/10.1007/s11633-025-1576-y}{DOI} \quad (9 citas)}
+
+\textbf{A Three-Level Framework for LLM-Enhanced eXplainable AI.} \\
+\sub{\textit{Information Systems Frontiers}, 2025. M.~Bello, R.~Bello, M.M.~García, A.~Nowé, \textbf{I.~Sevillano-García}, F.~Herrera. \href{https://doi.org/10.1007/s10796-025-10668-1}{DOI} \quad (14 citas)}
+
+\textbf{REVEL Framework to Measure Local Linear Explanations for Black-Box Models.} \\
+\sub{\textit{Intl.~J.~Intelligent Systems}, 2023. \textbf{I.~Sevillano-García}, J.~Luengo, F.~Herrera. \href{https://doi.org/10.1155/2023/8068569}{DOI} \quad (15 citas)}
+
+\textbf{A Tutorial on Segmentation of Metallographic Images: MetalDAM Dataset, DL Ensemble.} \\
+\sub{\textit{Information Fusion}, 2022. J.~Luengo, R.~Moreno, \textbf{I.~Sevillano-García}, et~al. \href{https://doi.org/10.1016/j.inffus.2021.09.018}{DOI} \quad (59 citas)}
+
+\textbf{COVIDGR Dataset \& COVID-SDNet Methodology for Predicting COVID-19 (Chest X-ray).} \\
+\sub{\textit{IEEE JBHI}, 24(12), 3595--3605, 2020. S.~Tabik, A.~Gómez-Ríos, J.L.~Martín-Rodríguez, \textbf{I.~Sevillano-García}, et~al. \href{https://doi.org/10.1109/JBHI.2020.3037127}{DOI} \quad (477 citas)}
+
+\blueitem{Congresos}
+
+\textbf{Fine-Grained Prostate Cancer Tissue Classification via Expert-Annotated Dataset \& Interpretable DL.} \\
+\sub{\textit{IEEE CAI 2026}, 1264--1269. J.~Ayensa-Jiménez, D.~Navarro, \textbf{I.~Sevillano-García}, et~al. \href{https://doi.org/10.1109/CAI68641.2026.11536250}{DOI}}
+
+\textbf{Optimizing LIME Explanations Using REVEL Metrics.} \\
+\sub{\textit{HAIS}, 304--313, 2023. \textbf{I.~Sevillano-Garcia}, J.~Luengo, F.~Herrera. \href{https://doi.org/10.1007/978-3-031-40725-3_26}{DOI}}
+
+\textbf{Low-Impact Feature Reduction Regularization Term: How to Improve AI with Explainability.} \\
+\sub{\textit{xAI 2023 (Late-breaking Work, poster)}, 135--139. \textbf{I.~Sevillano-García}, J.~Luengo, F.~Herrera. \href{https://dblp.org/rec/conf/xai/Sevillano-Garcia23}{DBLP}}
+
+\textbf{Slicer: Feature Learning for Class Separability with LS-SVM Loss (COVID-19 X-ray).} \\
+\sub{\textit{HAIS}, 305--315, 2021. D.~Charte, \textbf{I.~Sevillano-García}, et~al. \href{https://doi.org/10.978-3-030-86271-8_26}{DOI}}
+
+\normalsize
+
+%--- OPEN SOURCE ---
+\section*{Software y datos de código abierto}
+
+\blueitem{Software}
+\begin{itemize}
+    \item \textbf{S-ReVel} --- audita explicaciones lineales locales (p.\,ej.\ LIME) en robustez, concisión y prescriptividad. \href{https://github.com/ari-dasci/S-ReVel}{github.com/ari-dasci/S-ReVel}. AGPL-3.0.
+    \item \textbf{S-STOOD-X} --- detección OOD explicable mediante el test de Wilcoxon-Mann-Whitney y explicaciones visuales basadas en conceptos. \href{https://github.com/ari-dasci/S-STOOD-X}{github.com/ari-dasci/S-STOOD-X}. GPL-3.0.
+    \item \textbf{S-T-SHIELD} --- regularización guiada por explicaciones que oculta características de entrada durante el entrenamiento para mejorar rendimiento y explicabilidad. \href{https://github.com/ari-dasci/S-T-SHIELD}{github.com/ari-dasci/S-T-SHIELD}. GPL-3.0.
+\end{itemize}
+
+\blueitem{Conjuntos de datos}
+\begin{itemize}
+    \item \textbf{COVIDGR} --- conjunto de radiografías de tórax COVID-19 con clasificación fina por niveles de gravedad, desde RT-PCR positiva sin síntomas hasta casos graves. \href{https://github.com/ari-dasci/OD-covidgr}{github.com/ari-dasci/OD-covidgr}.
+    \item \textbf{MetalDAM} --- conjunto de imágenes metalográficas para segmentación microestructural en el control de calidad de la industria del acero. \href{https://github.com/ari-dasci/OD-MetalDAM}{github.com/ari-dasci/OD-MetalDAM}.
+\end{itemize}
+
+%--- TEACHING & MENTORING ---
+\section*{Docencia y tutorización}
+
+\begin{itemize}
+    \item Codirección de 2 tesis doctorales (programa UGR), en curso: temas como \textit{Machine Unlearning}, métricas XAI e IA agéntica.
+    \item Codirección de trabajos de fin de grado y de máster, UGR.
+    \item Docencia universitaria: Metodología de la Programación (1.er curso de grado, Dpto.~de Ciencias de la Computación e IA, UGR, 2024--2025). \href{https://grados.ugr.es/ramas/ingenieria-arquitectura/grado-ingenieria-informatica/metodologia-la-programacion}{Página de la asignatura}.
+\end{itemize}
+
+%--- ACADEMIC SERVICE ---
+\section*{Actividad académica}
+
+\blueitem{Ponencias invitadas y docencia:}
+\begin{itemize}
+    \item Escuela Internacional de Verano ADIA Lab sobre IA Explicable --- ``Lab on xAI Tools'' (Granada, mayo 2025).
+    \item Instructor, Seminarios INCIBE sobre IA y Ciberseguridad (DaSCI / Cámara de Comercio, 2025). Coordiné el Bloque 1 sobre IA Confiable junto a F.~Herrera.
+\end{itemize}
+
+\blueitem{Revisión por pares:}
+\begin{sloppypar}
+\begin{itemize}
+    \item \textbf{Information Sciences} (Elsevier; IF 6.0) --- 2025. Ciencias de la información, ingeniería del conocimiento, sistemas inteligentes.
+    \item \textbf{Information Fusion} (Elsevier; IF 17.4) --- 2023. Fusión de información multisensor y multifuente.
+    \item \textbf{IEEE SSCI 2025} --- Simposio sobre Inteligencia Computacional Confiable, Explicable y Responsable (Trondheim, Noruega).
+\end{itemize}
+\end{sloppypar}
+Verificado vía ORCID y confirmación oficial de CMT.
+
+%--- RESEARCH PROJECTS & FUNDING ---
+\section*{Proyectos de investigación y financiación}
+
+\begin{itemize}
+    \item \textbf{PID2023-150070NB-I00} (MCIN/AEI). \emph{Investigador predoctoral y posdoctoral}. IA Confiable, centrada en explicabilidad e IA segura.
+    \item \textbf{Cátedra ENIA IAFER} (EU NextGen, TSI-100927-2023-1). \emph{Investigador predoctoral}. IA Confiable, explicabilidad e IA segura.
+    \item \textbf{IAFER CiB --- Cátedra INCIBE de IA Ética para Ciberseguridad} (DaSCI/UGR). \emph{Investigador predoctoral}. XAI aplicada a ciberseguridad e IA ética.
+\end{itemize}
+
+%--- TECHNICAL SKILLS ---
+\section*{Competencias técnicas}
+
+\blueitem{Lenguajes:} Python, R \\
+\blueitem{Entornos:} PyTorch, TensorFlow, scikit-learn \\
+\blueitem{Herramientas:} Git, Linux, Conda, TensorBoard, Slurm \\
+\blueitem{Computación:} clústeres multi-GPU (NVIDIA A100), entrenamiento distribuido, seguimiento de experimentos
+
+%--- SPOKEN LANGUAGES ---
+\section*{Idiomas}
+
+Español --- nativo \quad\textbar\quad Inglés --- fluido
+
+%--- REFERENCES ---
+\section*{Referencias}
+
+\begin{minipage}[t]{0.48\textwidth}
+    \textbf{Prof.~Francisco Herrera} \\
+    \sub{Catedrático de Universidad \\ Dpto.~de CC.~de la Computación e IA, UGR \\ \href{mailto:herrera@decsai.ugr.es}{herrera@decsai.ugr.es}}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.48\textwidth}
+    \textbf{Prof.~Julián Luengo} \\
+    \sub{Catedrático de Universidad \\ Dpto.~de CC.~de la Computación e IA, UGR \\ \href{mailto:julianlm@decsai.ugr.es}{julianlm@decsai.ugr.es}}
+\end{minipage}
+
+\end{document}

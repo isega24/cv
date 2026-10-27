@@ -1,0 +1,257 @@
+\documentclass[11pt,a4paper]{article}
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES
+%----------------------------------------------------------------------------------------
+\usepackage[margin=0.75in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{sourcesanspro}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+\usepackage{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	COLORS & STYLES
+%----------------------------------------------------------------------------------------
+\definecolor{accent}{HTML}{1A1A1A}
+\definecolor{linkblue}{HTML}{0B5FA5}
+\definecolor{subtitle}{HTML}{555555}
+
+\color{accent}
+\setlength{\parskip}{0.25em}
+
+\titleformat{\section}{\large\bfseries\uppercase}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{0.8em}{0.3em}
+
+\setlist[itemize]{label=\textbullet, leftmargin=*, noitemsep, topsep=2pt, parsep=2pt}
+
+\hypersetup{colorlinks=true, urlcolor=linkblue, linkcolor=linkblue}
+
+% Two-column entry: date on left, content on right
+\newcommand{\entry}[2]{%
+  \noindent
+  \begin{tabularx}{\textwidth}{@{}p{0.18\textwidth}@{\hspace{0.02\textwidth}}X@{}}
+    #1 & #2
+  \end{tabularx}
+  \par\vspace{0.15em}
+}
+
+\newcommand{\subt}[1]{{\color{subtitle}\small #1}\par}
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+%--- HEADER ---
+\begin{center}
+{\huge \textbf{Iván Sevillano-García}} \\[0.3em]
+\small
+Granada, Spain \quad\textbar\quad
+\href{mailto:isevillano@go.ugr.es}{isevillano@go.ugr.es} \quad\textbar\quad
+\href{https://www.linkedin.com/in/iván-sevillano-garcía-304801116}{LinkedIn} \quad\textbar\quad
+\href{https://github.com/isega24}{GitHub} \quad\textbar\quad
+\href{https://scholar.google.com/citations?user=g5xyauEAAAAJ}{Scholar} \quad\textbar\quad
+\href{https://orcid.org/0000-0002-5029-9106}{ORCID}
+\end{center}
+
+\vspace{0.3em}
+
+%--- PROFILE ---
+\section*{Profile}
+
+Researcher in Trustworthy and Explainable AI (XAI), specializing in explanation generation, evaluation, and correction for black-box models, out-of-distribution (OOD) detection, and trustworthy deployment in high-stakes domains (healthcare, industrial manufacturing). PhD in Information and Communication Technologies (University of Granada, 2025); dissertation delivers three pillars aligned with the Trustworthy AI agenda: REVEL (explanation evaluation framework), X-SHIELD (explanation-driven regularization), and STOOD-X (explainable OOD detection with statistical confidence). Early-impact trajectory: 521 citations, COVID-19 chest X-ray dataset (477 citations), sustained XAI publications in top venues, open-source releases, and active engagement with ADIA Lab as a speaker at the ADIA Lab International Summer School on Explainable AI (Granada, 2025).
+
+%--- EDUCATION ---
+\section*{Education}
+
+\entry{2021--2025}{%
+  \textbf{PhD, Information and Communication Technologies} \par
+  \subt{University of Granada --- DaSCI Institute} \par
+  \textit{Thesis:} Explainable Artificial Intelligence: Methods for the Generation, Evaluation, and Correction of Explanations \par
+  \subt{Supervisors: Prof.~Francisco Herrera, Prof.~Julián Luengo \quad Defense: Nov 13, 2025} \par
+  \subt{Contributions: REVEL (explanation evaluation), X-SHIELD (explanation regularization), STOOD-X (explainable OOD detection)} \par
+  \subt{\href{https://hdl.handle.net/10481/112935}{hdl.handle.net/10481/112935} \quad ISBN 9791370150433}
+}
+
+\entry{2019--2020}{%
+  \textbf{M.Sc.~in Data Science and Computer Engineering} \par
+  \subt{University of Granada}
+}
+
+\entry{2013--2019}{%
+  \textbf{B.Sc.~Double Degree in Computer Science and Mathematics} \par
+  \subt{University of Granada --- ETSIIT}
+}
+
+%--- RESEARCH EXPERIENCE ---
+\section*{Research Experience}
+
+\entry{2019--2025}{%
+  \textbf{Predoctoral Researcher}, University of Granada / DaSCI \par
+  \begin{itemize}
+    \item Developed Trustworthy AI methodologies: explanation evaluation, explanation-driven model regularization, explainable OOD detection.
+    \item First-author publications in Pattern Recognition, Machine Intelligence Research, Information Systems Frontiers, Intl.~J.~Intelligent Systems.
+    \item Collaborated on COVID-19 diagnosis from chest X-rays (IEEE JBHI, 477 citations) and metallographic segmentation for the steel industry (Information Fusion, 59 citations).
+    \item Researcher within the ENIA IAFER Chair (EU Next Generation-funded university--industry program on responsible AI).
+  \end{itemize}
+}
+
+\entry{Feb--Mar 2026}{%
+  \textbf{Visiting Researcher}, Poznan University of Technology, Poland \par
+  \subt{Host: Prof.~Jerzy Stefanowski (Machine Learning Group)} \par
+  \subt{Research on prototype-based and counterfactual explanations; joint publication proposal in progress.}
+}
+
+\entry{2020--2021}{%
+  \textbf{Industrial Collaboration --- ArcelorMittal}, via DaSCI, UGR \par
+  \subt{Deep-learning ensemble for metallographic image segmentation; MetalDAM dataset (Information Fusion, 59 citations).}
+}
+
+%--- PUBLICATIONS ---
+\section*{Selected Publications}
+
+\entry{2026}{%
+  \textbf{STOOD-X: Explainable Out-of-Distribution Detection via Nonparametric Statistical Testing on Large-Scale Datasets.} \par
+  \subt{\textit{Pattern Recognition}. I.~Sevillano-García, J.~Luengo, F.~Herrera. \href{https://doi.org/10.1016/j.patcog.2026.113254}{DOI}}
+}
+
+\entry{2026}{%
+  \textbf{X-SHIELD: Regularization for Explainable Artificial Intelligence.} \par
+  \subt{\textit{Machine Intelligence Research}, 23, 528--544. I.~Sevillano-García, J.~Luengo, F.~Herrera. \href{https://doi.org/10.1007/s11633-025-1576-y}{DOI}}
+}
+
+\entry{2025}{%
+  \textbf{A Three-Level Framework for LLM-Enhanced eXplainable AI: From Technical Explanations to Natural Language.} \par
+  \subt{\textit{Information Systems Frontiers}. M.~Bello, R.~Bello, M.M.~García, A.~Nowé, I.~Sevillano-García, F.~Herrera. \href{https://doi.org/10.1007/s10796-025-10668-1}{DOI}}
+}
+
+\entry{2026}{%
+  \textbf{Fine-Grained Prostate Cancer Tissue Classification Through Expert-Annotated Dataset and Clinically Interpretable Deep Learning.} \par
+  \subt{\textit{IEEE CAI 2026}, 1264--1269. J.~Ayensa-Jiménez, D.~Navarro, I.~Sevillano-García, et~al.}
+}
+
+\entry{2023}{%
+  \textbf{REVEL Framework to Measure Local Linear Explanations for Black-Box Models.} \par
+  \subt{\textit{Intl.~J.~Intelligent Systems}. I.~Sevillano-García, J.~Luengo, F.~Herrera. \href{https://doi.org/10.1155/2023/8068569}{DOI} \quad (15 cit.)}
+}
+
+\entry{2023}{%
+  \textbf{Optimizing LIME Explanations Using REVEL Metrics.} \par
+  \subt{\textit{HAIS}, 304--313. I.~Sevillano-Garcia, J.~Luengo, F.~Herrera.}
+}
+
+\entry{2023}{%
+  \textbf{Low-Impact Feature Reduction Regularization Term: How to Improve AI with Explainability.} \par
+  \subt{\textit{xAI (LBW)}, 135--139. I.~Sevillano-García, J.~Luengo, F.~Herrera.}
+}
+
+\entry{2022}{%
+  \textbf{A Tutorial on the Segmentation of Metallographic Images: MetalDAM Dataset, Deep-Learning Ensemble.} \par
+  \subt{\textit{Information Fusion}. J.~Luengo, R.~Moreno, I.~Sevillano-García, D.~Charte, et~al. \quad (59 cit.)}
+}
+
+\entry{2021}{%
+  \textbf{Slicer: Feature Learning for Class Separability with LS-SVM Loss and COVID-19 Chest X-Ray Case Study.} \par
+  \subt{\textit{HAIS}, 305--315. D.~Charte, I.~Sevillano-García, et~al.}
+}
+
+\entry{2020}{%
+  \textbf{COVIDGR Dataset and COVID-SDNet Methodology for Predicting COVID-19 Based on Chest X-Ray Images.} \par
+  \subt{\textit{IEEE JBHI}, 24(12), 3595--3605. S.~Tabik, A.~Gómez-Ríos, J.L.~Martín-Rodríguez, I.~Sevillano-García, et~al. \href{https://doi.org/10.1109/JBHI.2020.3037127}{DOI} \quad (477 cit.)}
+}
+
+%--- METRICS ---
+\section*{Scholar Metrics}
+
+\entry{}{%
+  \textbf{521 citations} (512 since 2021) \quad\textbar\quad h-index 4 \quad\textbar\quad i10-index 3 \par
+  \subt{Trajectory: 93 ('21), 139 ('22), 105 ('23), 88 ('24), 50 ('25). \quad \href{https://scholar.google.com/citations?user=g5xyauEAAAAJ}{Scholar profile}}
+}
+
+%--- OPEN SOURCE ---
+\section*{Open-Source Software \& Datasets}
+
+\entry{}{%
+  \begin{itemize}
+    \item \textbf{ReVEL} --- XAI auditing library for explanation evaluation. \href{https://github.com/isega24/ReVel}{github.com/isega24/ReVel} (AGPL-3.0)
+    \item \textbf{SHIELD} --- X-SHIELD regularization implementation. \href{https://github.com/isega24/SHIELD}{github.com/isega24/SHIELD} (GPL-3.0)
+    \item \textbf{XAI-COVID19} --- COVID-19 detection with XAI. \href{https://github.com/isega24/XAI-COVID19}{github.com/isega24/XAI-COVID19} (GPL-3.0)
+    \item \textbf{contextual-distillation} --- LLM distillation + OOD detection framework. \href{https://github.com/isega24/contextual-distillation}{github.com/isega24/contextual-distillation}
+    \item \textbf{COVIDGR} --- COVID-19 chest X-ray benchmark dataset (IEEE JBHI 2020; 477 cit.)
+    \item \textbf{MetalDAM} --- metallographic image dataset (Information Fusion 2021; 59 cit.)
+  \end{itemize}
+  \subt{Active curator of the Trustworthy AI open-source ecosystem (OpenOOD, betarce, AriadneXAI, zennit-crp, LeGrad, detoxai).}
+}
+
+%--- ADIA ENGAGEMENT ---
+\section*{Invited Talks \& ADIA Lab Engagement}
+
+\entry{May 2025}{%
+  \textbf{Speaker, ADIA Lab International Summer School on Explainable AI} \par
+  \subt{Granada, Spain --- ADIA Lab (Abu Dhabi) in collaboration with UGR/DaSCI} \par
+  \subt{Session: \textbf{``Lab on xAI Tools''} --- hands-on introduction to AIX360 (AI Explainability 360), covering LIME, SHAP, ProtoDash, counterfactual explainers, and proxy metrics for explanation-quality benchmarking.} \par
+  \subt{Co-organized working-team activities for participating students. Listed among confirmed speakers alongside ADIA Lab Advisory Board members.}
+}
+
+%--- GRANTS ---
+\section*{Grants \& Funded Projects}
+
+\begin{itemize}
+  \item \textbf{ENIA IAFER Chair} --- ``Ethical, Responsible, and General-Purpose AI: Applications in Risk Scenarios'' (TSI-100927-2023-1). EU Next Generation / Spanish Ministry of Digital Transformation. \textit{Researcher at UGR.}
+  \item \textbf{PID2023-150070NB-I00} --- Knowledge Generation Project, MCIN/AEI, Spain. \textit{Researcher.}
+\end{itemize}
+
+%--- TEACHING ---
+\section*{Teaching \& Mentoring}
+
+\begin{itemize}
+  \item PhD student co-supervision (ongoing): Machine Unlearning, XAI metrics, XAI for AI agents.
+  \item Co-supervision of undergraduate (TFG) and master's (TFM) theses, UGR.
+  \item University teaching, Dept.~of Computer Science and AI, UGR.
+  \item Leads group brainstorming sessions for research ideation and peer feedback.
+\end{itemize}
+
+%--- PEER REVIEW ---
+\section*{Peer Review}
+
+\begin{itemize}
+  \item Reviewer, \textit{Information Sciences} (Elsevier) --- 2025. \subt{Verified via ORCID}
+  \item Reviewer, \textit{Information Fusion} (Elsevier) --- 2023 (multiple). \subt{Verified via ORCID}
+\end{itemize}
+
+%--- SKILLS ---
+\section*{Skills}
+
+\textbf{Programming:} Python, R, PyTorch, TensorFlow, scikit-learn \\
+\textbf{HPC:} multi-GPU clusters (NVIDIA A100), Slurm, distributed training \\
+\textbf{Reproducibility:} Conda, TensorBoard, experiment tracking \\
+\textbf{Research:} XAI, trustworthy AI, OOD detection, explanation evaluation/auditing, explanation regularization, LLM-enhanced explainability, AI for healthcare, AI for industry, counterfactual/prototype explanations
+
+%--- LANGUAGES ---
+\section*{Languages}
+
+Spanish --- native \quad\textbar\quad English --- C1 (full professional proficiency)
+
+%--- REFERENCES ---
+\section*{References}
+
+\begin{minipage}[t]{0.48\textwidth}
+  \textbf{Prof.~Francisco Herrera} \\
+  Director, DaSCI Institute \\
+  Dept.~CS \& AI, UGR \\
+  \href{mailto:fherrera@ugr.es}{fherrera@ugr.es}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.48\textwidth}
+  \textbf{Prof.~Julián Luengo} \\
+  Full Professor \\
+  Dept.~CS \& AI, UGR \\
+  \href{mailto:jluengo@ugr.es}{jluengo@ugr.es}
+\end{minipage}
+
+\end{document}

@@ -1,0 +1,12 @@
+# LaTeX build artefacts
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+missfont.log
+
+# Rendered previews
+*.png

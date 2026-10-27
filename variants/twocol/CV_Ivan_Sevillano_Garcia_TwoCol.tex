@@ -1,0 +1,260 @@
+\documentclass[10pt,a4paper]{article}
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES
+%----------------------------------------------------------------------------------------
+\usepackage[left=0.5in,top=0.5in,right=0.5in,bottom=0.5in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{sourcesanspro}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+
+%----------------------------------------------------------------------------------------
+%	COLORS & STYLES
+%----------------------------------------------------------------------------------------
+\definecolor{titleblue}{HTML}{00199e}
+\definecolor{sidebarbg}{HTML}{F0F2F5}
+\definecolor{subtitleblue}{HTML}{2ec1e0}
+\definecolor{darktext}{HTML}{222222}
+\definecolor{sidehead}{HTML}{00199e}
+\definecolor{linkblue}{HTML}{0B5FA5}
+\definecolor{subtle}{HTML}{666666}
+
+\color{darktext}
+\linespread{0.92}
+\setlength{\parskip}{0.15em}
+
+\titleformat{\section}{\normalsize\bfseries\color{titleblue}}{}{0em}{}[\vspace{-0.3em}\rule{\textwidth}{0.4pt}]
+\titlespacing*{\section}{0pt}{0.5em}{0.2em}
+
+\setlist[itemize]{label=\textbullet, leftmargin=*, noitemsep, topsep=0pt, parsep=0pt}
+
+\hypersetup{colorlinks=true, urlcolor=linkblue, linkcolor=linkblue}
+
+% Sidebar text (smaller, justified)
+\newcommand{\sidehead}[1]{{\small\bfseries\color{sidehead}\uppercase{#1}}\par\vspace{0.15em}}
+\newcommand{\sidetext}[1]{{\footnotesize\justifying #1\par}}
+\newcommand{\sideitem}[1]{{\footnotesize\textbullet\ #1\par}}
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+%--- TOP BANNER ---
+{\Large \textbf{\textcolor{titleblue}{Iván Sevillano-García}}} \hfill {\footnotesize \textcolor{subtle}{521 citations \textbar\ h-index 4 \textbar\ 512 since 2021}} \\[0.1em]
+{\footnotesize Researcher in Trustworthy \& Explainable AI \quad\textbar\quad PhD, Information \& Communication Technologies, UGR 2025} \\[0.1em]
+{\footnotesize
+\href{mailto:isevillano@go.ugr.es}{isevillano@go.ugr.es} \textbar\
+\href{https://www.linkedin.com/in/iván-sevillano-garcía-304801116}{LinkedIn} \textbar\
+\href{https://github.com/isega24}{GitHub} \textbar\
+\href{https://scholar.google.com/citations?user=g5xyauEAAAAJ}{Scholar} \textbar\
+\href{https://orcid.org/0000-0002-5029-9106}{ORCID} \textbar\
+Granada, Spain
+}
+
+\vspace{0.3em}
+\hrule height 0.6pt
+\vspace{0.2em}
+
+%--- TWO-COLUMN LAYOUT ---
+\noindent
+\begin{minipage}[t]{0.32\textwidth}
+% ============ SIDEBAR ============
+\colorbox{sidebarbg}{%
+\begin{minipage}[t]{0.30\textwidth}
+\vspace{0.4em}
+
+%--- PROFILE ---
+\sidehead{Profile}
+\sidetext{Researcher in AI with a focus on Explainable AI, OOD detection, and trustworthy deployment in high-stakes domains. I develop methods that improve interpretability, robustness, and reliability of deep learning systems, combining theoretical modeling with empirical evaluation on benchmark and real-world datasets. Contributions: frameworks for explanation auditing, explanation-driven regularization, and explainable OOD detection with statistical confidence. Published in Pattern Recognition, MIR, IEEE JBHI; speaker at ADIA Lab Summer School on XAI (2025). Currently advancing toward trustworthy agentic AI --- harness engineering, loop engineering, persistent memory with SOTA LLMs.}
+
+\vspace{0.3em}
+
+%--- SKILLS ---
+\sidehead{Skills}
+\sideitem{\textbf{Programming:} Python, R, PyTorch, TensorFlow, scikit-learn}
+\sideitem{\textbf{HPC:} multi-GPU clusters (A100), Slurm, distributed training}
+\sideitem{\textbf{Reproducibility:} Conda, TensorBoard, experiment tracking}
+\sideitem{\textbf{DevOps:} Git, Linux, scientific computing}
+\sideitem{\textbf{Peer review:} Information Sciences (2025), Information Fusion (2023)}
+\vspace{0.1em}
+
+%--- RESEARCH AREAS ---
+\sidehead{Research Areas}
+\sideitem{Explainable AI (XAI)}
+\sideitem{Trustworthy AI}
+\sideitem{OOD detection}
+\sideitem{Explanation evaluation \& auditing}
+\sideitem{Explanation-driven regularization}
+\sideitem{LLM-enhanced explainability}
+\sideitem{AI for healthcare (imaging)}
+\sideitem{AI for industry}
+\sideitem{Counterfactual / prototype XAI}
+\sideitem{Agentic AI}
+\sideitem{Harness \& loop engineering}
+\sideitem{Persistent memory}
+\sideitem{LLM integration}
+\vspace{0.1em}
+
+%--- OPEN SOURCE ---
+\sidehead{Open Source}
+\sideitem{\textbf{S-ReVel} --- XAI auditing \href{https://github.com/ari-dasci/S-ReVel}{\tiny github}}
+\sideitem{\textbf{SHIELD} --- X-SHIELD regularization \href{https://github.com/isega24/SHIELD}{\tiny github}}
+\sideitem{\textbf{COVIDGR} --- chest X-ray dataset (477 cit.)}
+\sideitem{\textbf{MetalDAM} --- metallographic dataset (59 cit.)}
+\vspace{0.1em}
+
+%--- LANGUAGES ---
+\sidehead{Languages}
+\sideitem{Spanish --- native}
+\sideitem{English --- C1 (professional)}
+\vspace{0.1em}
+
+%--- GRANTS ---
+\sidehead{Grants}
+\sidetext{ENIA IAFER Chair (EU NextGen, TSI-100927-2023-1); PID2023-150070NB-I00 (MCIN/AEI).}
+
+\vspace{0.4em}
+\end{minipage}%
+}
+
+\end{minipage}\hfill
+\begin{minipage}[t]{0.64\textwidth}
+% ============ MAIN COLUMN ============
+
+%--- EDUCATION ---
+\section*{Education}
+
+\textbf{PhD, Information \& Communication Technologies} \hfill 2021--2025 \\
+\textcolor{subtle}{\footnotesize University of Granada --- DaSCI Institute} \\
+\textit{Thesis:} Explainable AI: Methods for the Generation, Evaluation, and Correction of Explanations \\
+\textcolor{subtle}{\footnotesize Supervisors: F.~Herrera, J.~Luengo \quad Defense: Nov 13, 2025 \quad \textbf{Sobresaliente Cum Laude}} \\
+\textcolor{subtle}{\footnotesize Contributions: REVEL (explanation evaluation), X-SHIELD (explanation regularization), STOOD-X (explainable OOD detection).} \\
+\textcolor{subtle}{\footnotesize \href{https://hdl.handle.net/10481/112935}{hdl.handle.net/10481/112935} \quad ISBN 9791370150433}
+
+\vspace{0.2em}
+
+\textbf{M.Sc.~Data Science \& Computer Engineering} \hfill 2019--2020 \\
+\textcolor{subtle}{\footnotesize University of Granada}
+
+\vspace{0.2em}
+
+\textbf{B.Sc.~Double Degree in CS \& Mathematics} \hfill 2013--2019 \\
+\textcolor{subtle}{\footnotesize University of Granada --- ETSIIT}
+
+\vspace{0.3em}
+
+%--- RESEARCH EXPERIENCE ---
+\section*{Research Experience}
+
+\textbf{Predoctoral Researcher} \hfill 2019--2025 \\
+\textcolor{subtle}{\footnotesize University of Granada / DaSCI Institute}
+\begin{itemize}
+    \item Trustworthy AI methodologies: explanation evaluation, explanation-driven regularization, explainable OOD detection.
+    \item First-author in Pattern Recognition, Machine Intelligence Research, Information Systems Frontiers, IJIS.
+    \item Collaborated on COVID-19 chest X-ray diagnosis (IEEE JBHI, 477 cit.) and metallographic segmentation for the steel industry (Information Fusion, 59 cit.).
+    \item Researcher within the ENIA IAFER Chair (EU Next Generation-funded program on responsible AI).
+\end{itemize}
+
+\textbf{Visiting Researcher} \hfill Feb--Mar 2026 \\
+\textcolor{subtle}{\footnotesize Poznan University of Technology, Poland --- host: Prof.~J.~Stefanowski}
+\begin{itemize}
+    \item Prototype-based and counterfactual explanations for XAI post-hoc methods; joint publication proposal in progress.
+\end{itemize}
+
+\textbf{Industrial Collaboration --- ArcelorMittal} \hfill 2020--2021 \\
+\textcolor{subtle}{\footnotesize via DaSCI, UGR}
+\begin{itemize}
+    \item Deep-learning ensemble for metallographic image segmentation; MetalDAM dataset (Information Fusion, 59 cit.).
+\end{itemize}
+
+\vspace{0.3em}
+
+%--- PUBLICATIONS ---
+\section*{Selected Publications}
+
+\footnotesize
+
+\textbf{STOOD-X: Explainable OOD Detection via Nonparametric Statistical Testing on Large-Scale Datasets.} \\
+\textcolor{subtle}{\textit{Pattern Recognition}, 2026. I.~Sevillano-García, J.~Luengo, F.~Herrera. \href{https://doi.org/10.1016/j.patcog.2026.113254}{DOI}}
+
+\textbf{X-SHIELD: Regularization for Explainable Artificial Intelligence.} \\
+\textcolor{subtle}{\textit{Machine Intelligence Research}, 23, 528--544, 2026. I.~Sevillano-García, J.~Luengo, F.~Herrera. \href{https://doi.org/10.1007/s11633-025-1576-y}{DOI}}
+
+\textbf{A Three-Level Framework for LLM-Enhanced eXplainable AI.} \\
+\textcolor{subtle}{\textit{Information Systems Frontiers}, 2025. M.~Bello, R.~Bello, M.M.~García, A.~Nowé, I.~Sevillano-García, F.~Herrera. \href{https://doi.org/10.1007/s10796-025-10668-1}{DOI}}
+
+\textbf{Fine-Grained Prostate Cancer Tissue Classification via Expert-Annotated Dataset \& Interpretable DL.} \\
+\textcolor{subtle}{\textit{IEEE CAI 2026}, 1264--1269. J.~Ayensa-Jiménez, D.~Navarro, I.~Sevillano-García, et~al.}
+
+\textbf{REVEL Framework to Measure Local Linear Explanations for Black-Box Models.} \\
+\textcolor{subtle}{\textit{Intl.~J.~Intelligent Systems}, 2023. I.~Sevillano-García, J.~Luengo, F.~Herrera. \href{https://doi.org/10.1155/2023/8068569}{DOI} \quad (15 cit.)}
+
+\textbf{Optimizing LIME Explanations Using REVEL Metrics.} \\
+\textcolor{subtle}{\textit{HAIS}, 304--313, 2023. I.~Sevillano-Garcia, J.~Luengo, F.~Herrera.}
+
+\textbf{Low-Impact Feature Reduction Regularization Term.} \\
+\textcolor{subtle}{\textit{xAI (LBW)}, 135--139, 2023. I.~Sevillano-García, J.~Luengo, F.~Herrera.}
+
+\textbf{A Tutorial on Segmentation of Metallographic Images: MetalDAM Dataset, DL Ensemble.} \\
+\textcolor{subtle}{\textit{Information Fusion}, 2022. J.~Luengo, R.~Moreno, I.~Sevillano-García, et~al. \quad (59 cit.)}
+
+\textbf{Slicer: Feature Learning for Class Separability with LS-SVM Loss (COVID-19 X-ray).} \\
+\textcolor{subtle}{\textit{HAIS}, 305--315, 2021. D.~Charte, I.~Sevillano-García, et~al.}
+
+\textbf{COVIDGR Dataset \& COVID-SDNet Methodology for Predicting COVID-19 (Chest X-ray).} \\
+\textcolor{subtle}{\textit{IEEE JBHI}, 24(12), 3595--3605, 2020. S.~Tabik, A.~Gómez-Ríos, J.L.~Martín-Rodríguez, I.~Sevillano-García, et~al. \href{https://doi.org/10.1109/JBHI.2020.3037127}{DOI} \quad (477 cit.)}
+
+\normalsize
+
+\vspace{0.3em}
+
+%--- ADIA ENGAGEMENT ---
+\section*{ADIA Lab Engagement}
+
+\textbf{Speaker, ADIA Lab International Summer School on Explainable AI} \hfill May 2025 \\
+\textcolor{subtle}{\footnotesize Granada --- ADIA Lab (Abu Dhabi) in collaboration with UGR/DaSCI}
+\begin{itemize}
+    \item Delivered \textbf{``Lab on xAI Tools''}: hands-on introduction to AIX360 (AI Explainability 360), covering LIME, SHAP, ProtoDash, counterfactual explainers, and proxy metrics for explanation-quality benchmarking.
+    \item Co-organized working-team activities for participating students. Listed among confirmed speakers alongside ADIA Lab Advisory Board members.
+\end{itemize}
+
+\vspace{0.3em}
+
+%--- TEACHING ---
+\section*{Teaching \& Mentoring}
+
+\begin{itemize}
+  \item PhD student co-supervision (ongoing): Machine Unlearning, XAI metrics, XAI for AI agents.
+  \item Co-supervision of 2 PhD students at UCLV (Cuba), collab.~with Prof.~M.~Bello's group.
+  \item Ongoing mentoring of a doctoral researcher on a general auditing framework for AI systems.
+  \item Co-supervision of undergraduate (TFG) and master's (TFM) theses, UGR.
+  \item University teaching, Dept.~of CS \& AI, UGR.
+  \item Leads group brainstorming sessions for research ideation and peer feedback.
+\end{itemize}
+
+\vspace{0.3em}
+
+%--- REFERENCES ---
+\section*{References}
+
+\footnotesize
+\begin{tabularx}{\textwidth}{@{}X X@{}}
+    \textbf{Prof.~Francisco Herrera} & \textbf{Prof.~Julián Luengo} \\
+    Director, DaSCI Institute & Full Professor \\
+    Dept.~CS \& AI, UGR & Dept.~CS \& AI, UGR \\
+    \href{mailto:fherrera@ugr.es}{fherrera@ugr.es} & \href{mailto:jluengo@ugr.es}{jluengo@ugr.es}
+\end{tabularx}
+\normalsize
+
+\end{minipage}
+
+\end{document}
