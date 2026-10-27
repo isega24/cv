@@ -14,7 +14,7 @@ edit the `.tex`, run `./build.sh`, commit the source and the regenerated PDF tog
 | `variants/mbzuai/` | MBZUAI / ADIA Lab | EN + ES | Long researcher profile, research interests, collaboration section, funding. Used for the ADIA Lab application package. |
 | `variants/compact/` | Compact | EN | Condensed one-column version. |
 | `variants/twocol/` | Two-column | EN | Two-column layout for space-constrained forms. |
-| `variants/modern/` | Modern sidebar | ES | Dark left sidebar (contact, metrics, skills, languages), selected publications. 2 pages. |
+| `variants/modern/` | Modern sidebar | ES | Sage-green left sidebar (contact, metrics, skills, languages), selected publications. 2 pages. Palette: `#2F3E36` sidebar, `#A9C39E` headings, `#4E6B5A` accents. |
 | `pdf/` | — | — | Build output, committed so the PDF is always downloadable from the repo. |
 
 ## Building
