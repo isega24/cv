@@ -10,3 +10,7 @@ missfont.log
 
 # Rendered previews
 *.png
+
+# Build output lives in pdf/ only
+main/*.pdf
+variants/*/*.pdf

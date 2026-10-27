@@ -13,6 +13,6 @@ for src in main/*.tex variants/*/*.tex; do
         pdflatex -interaction=nonstopmode -halt-on-error "$base.tex" >/dev/null
     )
     cp "$dir/$base.pdf" "pdf/$base.pdf"
-    rm -f "$dir"/*.aux "$dir"/*.log "$dir"/*.out
+    rm -f "$dir/$base.aux" "$dir/$base.log" "$dir/$base.out" "$dir/$base.pdf"
     printf 'built pdf/%s.pdf\n' "$base"
 done
